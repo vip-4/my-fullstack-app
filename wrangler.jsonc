@@ -1,0 +1,20 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "my-fullstack-app",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-01-01",
+  "compatibility_flags": ["nodejs_compat"],
+
+  "vars": {
+    "ENVIRONMENT": "production",
+    "APP_VERSION": "1.0.0"
+  },
+
+  "hyperdrive": [
+    {
+      "binding": "HYPERDRIVE",
+      "id": "10c36da7e898499294f113d7e1897140",
+      "localConnectionString": "postgresql://neondb_owner:npg_rWOvA5QU9pFe@ep-square-boat-auqrsoiu.c-10.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
+    }
+  ]
+}

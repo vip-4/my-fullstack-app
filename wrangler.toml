@@ -1,0 +1,11 @@
+name = "edge-app"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+ENVIRONMENT = "production"
+
+[[hyperdrive]]
+binding = "HYPERDRIVE"
+id = "0c21810abc534c9681658adfee47789c"

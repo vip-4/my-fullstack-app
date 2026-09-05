@@ -1,0 +1,25 @@
+{
+  "name": "edge-app",
+  "version": "0.0.0",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "wrangler d1 migrations apply edge-db --remote",
+    "db:studio": "drizzle-kit studio"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250110.0",
+    "drizzle-kit": "^0.31.10",
+    "typescript": "^5",
+    "wrangler": "^4.129.0"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.45.2",
+    "hono": "^4.7.7",
+    "postgres": "^3.4.9"
+  }
+}
